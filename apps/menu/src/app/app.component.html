@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <span>
+    Portal
+  </span>
+  <span class="spacer"></span>
+  <a singleSpaRouterLink="/home/">
+    <mat-icon class="example-icon">home</mat-icon>
+  </a>
+  <a singleSpaRouterLink="/sidebar/">
+    <mat-icon class="example-icon">dashboard</mat-icon>
+  </a>
+  <a [singleSpaRouterLink]="getHelpUrl()">
+    <mat-icon class="example-icon">help_outline</mat-icon>
+  </a>
+</mat-toolbar>
