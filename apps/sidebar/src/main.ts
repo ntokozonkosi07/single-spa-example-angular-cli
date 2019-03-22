@@ -9,12 +9,10 @@ if (environment.production) {
   enableProdMode();
 }
 
-
-platformSingleSpa.mount('menu').subscribe(({ props, attachUnmount }) => {
+platformSingleSpa.mount('sidebar').subscribe(({ props, attachUnmount }) => {
   platformBrowserDynamic().bootstrapModule(AppModule).then((m) => {
     attachUnmount(m);
     // Do something with props if you want
     // Ex : module.instance.setSomething(...)
-  })
-  .catch(err => console.log(err));
+  });
 });

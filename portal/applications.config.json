@@ -11,13 +11,13 @@
         "selector": "home-root",
         "baseHref": "/home",
         "matchRoute": "/home/",
-        "isDefaultApp": true
+        "isDefaultApp": false
     },
     {
         "name": "sidebar",
         "selector": "sidebar-root",
         "baseHref": "/sidebar",
         "matchRoute": "/sidebar/",
-        "isDefaultApp": false
+        "isDefaultApp": true
     }
 ]
