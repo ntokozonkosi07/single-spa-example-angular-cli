@@ -3,10 +3,10 @@
   "name": "angular-single-spa-x",
   "description": "This is an example of examples on how to use [single-spa](https://github.com/CanopyTax/single-spa) && [single-spa-angular-cli](https://github.com/PlaceMe-SAS/single-spa-angular-cli) in a variety of contexts. Right now there are examples with the following technologies:",
   "scripts": {
-    "preinstall": "cd ./apps/home && npm i; cd ./../menu && npm i; cd ./../sidebar && npm i;",
+    "preinstall": "cd ./apps/home && npm i; cd ./../menu && npm i; cd ./../sidebar && npm i; cd ./../react.js.webpack && npm i;",
     "ng:lint": "cd ./apps/home && ng lint; cd ./../menu && ng lint; cd ./../menu && ng lint; cd ./../sidebar && ng lint; cd ./../sidebar && ng lint",
     "ng:test": "cd ./apps/home && ng test --watch=false; cd ./../menu && ng test --watch=false; cd ./../sidebar && ng test --watch=false;",
-    "ng:build": "cd ./apps/home && ng build --prod --aot=false -op ./../../build/home; cd ../menu && ng build --prod --aot=false -op ./../../build/menu; cd ../sidebar && ng build --prod --aot=false -op ./../../build/sidebar;",
+    "ng:build": "cd ./apps/home && ng build --prod --aot=false -op ./../../build/home; cd ../menu && ng build --prod --aot=false -op ./../../build/menu; cd ../sidebar && ng build --prod --aot=false -op ./../../build/sidebar; cd ./../react.js.webpack && npm run build",
     "start": "npm run ng:build; webpack-dev-server",
     "build": "webpack --config webpack.config.js"
   },
