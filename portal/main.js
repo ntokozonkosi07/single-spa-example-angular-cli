@@ -5,6 +5,14 @@ import 'zone.js';
 
 const applications = require('./applications.config.json');
 
+debugger;
+registerApplication(
+    'react-page',
+    () => import('./../apps/react.js/lifecycle').then(mod => mod.reactLifecycles),
+    // activityFunction
+    router.matchRoute('/react/', false)
+);
+
 for (const application of applications) {
     registerApplication(
         application.name,
