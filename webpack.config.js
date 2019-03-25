@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const applications = require('./portal/applications.config.json');
 
-const PORT = 8081;
+const PORT = 8080;
 
 const devApplications = {
     // menu: 'http://localhost:4200',
